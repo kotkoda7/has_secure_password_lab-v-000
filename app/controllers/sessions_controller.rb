@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
     
     @user = User.find(name: params[:user][:name]
     if @user.authenticate(params[:user][:password])
+      session[:user_id] = User.id
 end
   
 end

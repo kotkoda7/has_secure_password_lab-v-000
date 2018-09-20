@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new
     if @user.save 
-      session(:user_id) = @user.id
+      session[:user_id] = @user.id
       redirect_to root_path
     else
       render new_user_path

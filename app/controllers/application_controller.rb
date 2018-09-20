@@ -7,14 +7,12 @@ class ApplicationController < ActionController::Base
   def welcome
     login?
   end
-  
-  private
-  
-  def login? 
-    if session.inclode?(:user_id)
-      render root_path
+   private
+   def login?
+    if session.include?(:user_id)
+      render "/"
     else
-      render 'sessions/login'
+      render "sessions/login"
+    end
   end
-end
 end

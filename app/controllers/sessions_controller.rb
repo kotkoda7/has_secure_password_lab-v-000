@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     else
       flash[:message]= "incorrect login"
       render :login
+    end
 end
   
 end

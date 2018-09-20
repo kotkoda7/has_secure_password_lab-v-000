@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       flash[:message]= "incorrect login"
+      render :login
 end
   
 end

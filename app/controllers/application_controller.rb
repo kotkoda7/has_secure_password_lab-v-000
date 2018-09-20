@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   end
   
    private
+   
    def login?
     if session.include?(:user_id)
       render "/"
@@ -16,4 +17,5 @@ class ApplicationController < ActionController::Base
       render "sessions/login"
     end
   end
+  
 end

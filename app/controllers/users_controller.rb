@@ -13,4 +13,12 @@ class UsersController < ApplicationController
       render new_user_path
   end
 end
+
+private
+
+def user_params
+  
+
+end
+
 end

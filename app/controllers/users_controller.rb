@@ -8,5 +8,6 @@ class UsersController < ApplicationController
   def create
     @user = User.new
     
+    render :new
   end
 end

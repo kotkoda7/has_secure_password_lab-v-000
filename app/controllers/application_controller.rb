@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
   
   def login? 
-    if session.inclode?
+    if session.inclode?(:user_id)
   end
 end

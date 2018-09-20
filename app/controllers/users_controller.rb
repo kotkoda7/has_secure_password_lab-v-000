@@ -17,7 +17,7 @@ end
 private
 
 def user_params
-  
+  params.require
 
 end
 

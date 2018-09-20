@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
     login?
   end
   
+  private
+  
   def login? 
     if session.inclode?(:user_id)
       render root_path

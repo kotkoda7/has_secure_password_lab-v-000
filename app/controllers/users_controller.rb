@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     
   def create
     @user = User.new
+    if session()
     
     render :new
   end

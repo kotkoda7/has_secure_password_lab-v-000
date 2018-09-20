@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
   
   def login? 
-  
+    if 
   end
 end

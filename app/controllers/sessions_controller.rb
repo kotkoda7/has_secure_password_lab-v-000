@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def create
     
-    @user = find
+    @user = User.find[]
 end
   
 end

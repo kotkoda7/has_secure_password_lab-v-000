@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
     if session.inclode?(:user_id)
       render root_path
     else
-      
+      render 'sessions/login'
   end
 end

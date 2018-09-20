@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(name: params[:user][:name])
     if @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
-      redirect_to root_url
+      redirect_to "/"
     else
       flash[:message]= "incorrect login"
       render :login

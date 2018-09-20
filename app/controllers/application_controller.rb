@@ -10,5 +10,8 @@ class ApplicationController < ActionController::Base
   
   def login? 
     if session.inclode?(:user_id)
+      render root_path
+    else
+      
   end
 end
